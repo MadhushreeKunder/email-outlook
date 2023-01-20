@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import EmailCard from "./EmailCard/EmailCard";
 
-function EmailList() {
+const EmailList = () => {
   const [emailList, setEmailList] = useState([]);
 
   useEffect(() => {
@@ -15,16 +16,9 @@ function EmailList() {
   return (
     <div>
       <h1>Email List</h1>
-      <ul>
-        {emailList.map((item) => (
-          <li key={item.id}>
-            <h2>{item.subject}</h2>
-            <p>{item.short_description}</p>
-          </li>
-        ))}
-      </ul>
+      <EmailCard emailList={emailList} />
     </div>
   );
-}
+};
 
 export default EmailList;
