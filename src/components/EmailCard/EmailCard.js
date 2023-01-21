@@ -1,4 +1,5 @@
 import React from "react";
+import EmailDate from "../EmailDate/EmailDate";
 import "./EmailCard.css";
 
 const EmailCard = (props) => {
@@ -24,7 +25,7 @@ const EmailCard = (props) => {
                   Subject: <span className="bold"> {item.subject} </span>
                 </div>
                 <p>{item.short_description}</p>
-                <p> {Date(item.date)} </p>
+                <EmailDate date={item.date}/>
               </div>
             </div>
           </li>
