@@ -24,7 +24,7 @@ const EmailCard = (props) => {
                 <div>
                   Subject: <span className="bold"> {item.subject} </span>
                 </div>
-                <p>{item.short_description}</p>
+                <p className="margin">{item.short_description}</p>
                 <EmailDate date={item.date}/>
               </div>
             </div>
