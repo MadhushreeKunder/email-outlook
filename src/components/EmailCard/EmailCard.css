@@ -3,6 +3,7 @@
 .card {
   display: flex;
   border: 1px solid #cfd3dc;
+  background-color: white;
   margin-bottom:1rem ;
   border-radius: 10px;
   gap: 1rem;
