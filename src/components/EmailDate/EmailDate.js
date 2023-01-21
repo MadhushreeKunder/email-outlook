@@ -19,8 +19,8 @@ function EmailDate(props) {
 
   return (
     <div className="date">
-      <p>{`${day}/${month}/${year}`}</p>
-      <p>{time}</p>
+      <small>{`${day}/${month}/${year}`}</small>
+      <small>{time}</small>
     </div>
   );
 }
